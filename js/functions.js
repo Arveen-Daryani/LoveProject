@@ -114,14 +114,6 @@ function timeElapse(date){
 	$("#elapseClock").html(result);
 }
 
-(function () {
-  var startDate = "2025-01-01 00:00:00";
-  timeElapse(startDate);
-  setInterval(function () {
-    timeElapse(startDate);
-  }, 1000);
-}
-
 function showMessages() {
 	adjustWordsPosition();
 	$('#messages').fadeIn(5000, function() {
